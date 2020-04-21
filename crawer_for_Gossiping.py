@@ -50,7 +50,7 @@ def block_get_title_data(block_):
     buf_date = "block_get_title_data---error---"
     try:
         buf_title = block_.select(".title")[0].select("a")[0].text
-        buf_date = list_block[0].select(".date")[0].text
+        buf_date = block_.select(".date")[0].text
     except:
         print("error in block_get_title_data")
         #print(block_)
